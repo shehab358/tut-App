@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tut_app/presentation/theme_manager.dart';
 
 class TutApp extends StatefulWidget {
-
-   TutApp({super.key}); 
+  const TutApp({super.key});
 
   @override
   State<TutApp> createState() => _TutAppState();
@@ -11,7 +11,8 @@ class TutApp extends StatefulWidget {
 class _TutAppState extends State<TutApp> {
   @override
   Widget build(BuildContext context) {
-    return ;
+    return MaterialApp(
+      theme: getAppTheme(),
+    );
   }
 }
-
