@@ -9,5 +9,6 @@ class StringsManager {
   static const onBoardingsubTitle2 = "Application to train how to use clean code #2";
   static const onBoardingsubTitle3 = "Application to train how to use clean code #3";
   static const onBoardingsubTitle4 = "Application to train how to use clean code #4";
+  static const skip = "Skip";
 
 }

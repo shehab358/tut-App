@@ -16,6 +16,7 @@ class _TutAppState extends State<TutApp> {
       onGenerateRoute: RoutesGenerator.getRoute,
       initialRoute: Routes.splashRoute,
       theme: getAppTheme(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

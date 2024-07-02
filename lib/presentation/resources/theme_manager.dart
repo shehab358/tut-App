@@ -16,6 +16,7 @@ ThemeData getAppTheme() {
       shadowColor: ColorManager.gery,
       elevation: AppSize.s4,
     ),
+
     appBarTheme: AppBarTheme(
       color: ColorManager.primary,
       centerTitle: true,
@@ -26,12 +27,14 @@ ThemeData getAppTheme() {
         fontSize: FontSize.s16,
       ),
     ),
+
     buttonTheme: ButtonThemeData(
       shape: const StadiumBorder(),
       disabledColor: ColorManager.grey1,
       buttonColor: ColorManager.primary,
       splashColor: ColorManager.lightPrimary,
     ),
+
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         textStyle:
@@ -42,18 +45,23 @@ ThemeData getAppTheme() {
         ),
       ),
     ),
+
     textTheme: TextTheme(
-      displayLarge: getlightStyle(
-        color: ColorManager.white,
-        fontSize: FontSize.s22,
+      displayLarge: getsemiBoldStyle(
+        color: ColorManager.darkGrey,
+        fontSize: FontSize.s16,
       ),
       headlineLarge: getsemiBoldStyle(
         color: ColorManager.darkGrey,
         fontSize: FontSize.s16,
       ),
-      titleMedium: getMediumStyle(
-        color: ColorManager.lightGrey,
+      headlineMedium: getRegularStyle(
+        color: ColorManager.darkGrey,
         fontSize: FontSize.s14,
+      ),
+      titleMedium: getMediumStyle(
+        color: ColorManager.primary,
+        fontSize: FontSize.s16,
       ),
       bodyLarge: getRegularStyle(
         color: ColorManager.grey1,
@@ -62,6 +70,7 @@ ThemeData getAppTheme() {
         color: ColorManager.gery,
       ),
     ),
+
     inputDecorationTheme: InputDecorationTheme(
       contentPadding: EdgeInsets.all(AppPadding.p8),
       hintStyle: getRegularStyle(
@@ -110,5 +119,6 @@ ThemeData getAppTheme() {
         ),
       ),
     ),
+
   );
 }
